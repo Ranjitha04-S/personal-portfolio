@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranjitha Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span style="color: #ff004f; font-size: 28px;">R</span>anjitha <span style="color:#ff004f; font-size: 28px;">S</span>eenivasan.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars open" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span style="color: #ff004f;">Ranjitha</span> <br> From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------about------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/girl2.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Ranjitha Seenivasan, a passionate Full-Stack Developer skilled in HTML, CSS, JavaScript, React, Bootstrap, and Tailwind CSS. I specialize in creating responsive and user-friendly web applications. As I expand into full-stack development, I’m exploring backend technologies to build complete solutions.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab " id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Frontend Development</span><br>Designing and developing user interfaces (UI/UX)</li>
+                            <li><span>Backend Development</span><br>Building and managing the server, database, and application logic to handle data processing, authentication, and overall functionality of a web application.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 September</span><br>Python coder at CODTECH IT SOLUTIONS</li>
+                            <li><span>2024 September</span><br>Blockchain Reach Paper in ICT Academy</li>
+                            <li><span>2025 March</span><br>Java Developer at Hunar Intern</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2025</span><br>BSc.,Computer Science from M.V.M College for women</li>
+                            <li><span>2022</span><br>Blockchain Reach Paper in ICT Academy</li>
+                            <li><span>2025</span><br>Java Fullstack from CSC Computer Center</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----services--- -->
+     
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, neque?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, debitis?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quo!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ------porfolio------- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/app1.jpg" alt="">
+                <div class="layer">
+                    <h3>Smart Assists</h3>
+                    <p>This web application is used to manage attendance and generate flexible timetable. This project is build by using PHP and MySQl.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/10.jpg" alt="">
+                <div class="layer">
+                    <h3>Flipcart Clone</h3>
+                    <p>This project is build by React framework and tailwind css. This project displays the interfaces of flipcart. </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/app3.jpg" alt="">
+                <div class="layer">
+                    <h3>Porfolio Website</h3>
+                    <p>The personal portfolio website is implemented by using Express and next js technologies.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+         <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+ <!-------contact----->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fas fa-paper-plane"></i>ranjithaseenivasan2004@gmail.com</p>
+                <p> <i class="fas fa-phone-square-alt"></i>+91 9345855728</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="img/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name"  required>
+                    <input type="email" name="Email" placeholder="Your Email"  required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Ranjitha.</p>
+    </div>
+  </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzceDKW1QiY7EOPRMgx2Xj0IhiEOQGtCrWY6oqQ6uwd6QUUA_w8Bmtu1QYofIInHGEX/exec'
+        const form = document.forms['submit-to-google-sheet']
+        
+        const msg =document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML= "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
